@@ -1,0 +1,38 @@
+﻿UNITED ASSASSINS ASSOCIATION (UAA) — OFFICIAL OPERATIVE MANUAL
+Document Ref: UAA-OS-v5.3-FINAL
+Agent Contact: Sylvia Christel
+Listen up, Travis. Or whichever sad, desk-bound otaku is sitting at the terminal trying to climb out of Rank 11. The Association doesn't hand out rank updates for free, and we certainly don't care about your thumb cramps. You wanted custom firmware for your little beam katana adventures? Here is your documentation. Read it, memorize it, and try not to die in an alleyway before you pay your entry fees.
+Input Mappings & Combat Overrides
+Command / Function
+	Input Binding
+	Operational Behavior
+	Auto-Forward Walk
+	XButton2
+	Toggles continuous forward motion so you can move without holding W.
+	Guard / Lock-On
+	LShift
+	Single tap toggles continuous lock-on. Double-tap instantly re-centers the camera (Space).
+	Death Blow Finisher
+	MButton
+	Executes an instant four-way directional slash loop to trigger executions.
+	Beam Katana Recharge
+	R
+	Triggers a rapid vertical mouse-shake macro to charge your battery instantly.
+	Bike Cruise Control
+	XButton1
+	Locks acceleration (W) on the Schpeltiger for effortless city transit.
+	Lawn Mow Sweep
+	Numpad1
+	Sweeps forward and turns left sequentially to handle part-time jobs.
+	Part-Time Job Masher
+	Numpad0
+	Automated button masher (E) for rapid task completion at coconut/garbage stands.
+	System Control Hotkeys
+* F2 — Master Override: Toggles the entire script processing on or off.
+* F3 — Configurator Interface: Shows or hides the desktop Control Panel GUI (nmhGui).
+* Ctrl + Esc — Emergency Termination: Immediately kills the process and purges memory.
+Operational Directives
+1. INI Persistence: All remapped keys and checkbox options inside the F3 Configurator menu automatically write to nmh_config.ini in the local folder.
+2. HUD Status Display: A transparent green HUD stays docked at the bottom-left of your screen. It will indicate SYSTEM ONLINE when No More Heroes is focused, and display your active automation mode in real time.
+3. Execution Requirements: Ensure in-game bindings match default keys (W/A/S/D for movement, Space for camera reset, R for charge, E for interaction).
+Now, pay your placement fee and get out there. The top ten assassins aren't going to murder themselves.

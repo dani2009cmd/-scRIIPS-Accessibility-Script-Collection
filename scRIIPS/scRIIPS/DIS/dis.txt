@@ -1,0 +1,6 @@
+s
+name: bully-combo-remapper description: AHK v2 GUI script (now combo_remapper__V8___gui.ahk) remapping keyboard combos for Bully: Scholarship Edition via PCSX2 on Windows 10, built for accessibility; grown into a much larger multi-profile tool through iteration with another AI; tracks confirmed feature requests and status. sources: [chat] aliases: [combo remapper, combo_remapper_gui, combo_remapper_V4_gui, combo_remapper_V8_gui, bully scholarship edition remapper, PCSX2 combo remapper]
+plays Bully: Scholarship Edition via the PCSX2 emulator, on Windows 10
+wanted a GUI-based key-combo remapper for accessibility: define trigger keys that send combos of real keys
+confirmed feature requests, built: unlimited combo rows via an add-combo button; scrollable window (draggable scrollbar) for when rows exceed the visible area; per-row Hold vs Toggle vs Press mode; per-row button to add extra key slots to a combo; configurable scroll-click key (blank disables it); per-row remove button; configurable panic-toggle key (F8 by default); per-row "Detect" button that listens for key presses for a few seconds and auto-fills the combo from whatever was pressed
+continued implementing this project with another AI between sessions, producing a V4 version of the file with a rebuilt GUI (fixed row-slot pool instead of full rebuild-on-change, plus mouse-wheel scroll support)

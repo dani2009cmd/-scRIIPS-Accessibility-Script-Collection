@@ -1,0 +1,17 @@
+{
+  "game": "C:\\Program Files\\Petitferret\\ぽぽたんDVD",
+  "matched_records": 2136,
+  "patched_records": 2136,
+  "too_long_records": "too_long_records",
+  "too_long": "too_long",
+  "dialogue_layout": {
+    "reflowed": 0,
+    "box_overflow": 0
+  },
+  "single_line_choice_sources": 176,
+  "loose_text_files": {
+    "files_changed": 0,
+    "replacements": 0
+  },
+  "exe_font_spacing_patch": "patched"
+}

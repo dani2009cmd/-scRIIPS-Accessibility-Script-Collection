@@ -1,0 +1,19 @@
+﻿[ UAA SYSTEM TRANSMISSION // PRIORITY DOSSIER ]
+PROJECT ID: UAA MASTER OS v6.0 TARGET: TRAVIS TOUCHDOWN // RANK #1 APPLICANT STATUS: FINAL COMMUNIQUE // DECK SECURED
+[ SYSTEM LOG: README.txt ]
+Welcome to the official documentation for the United Assassins Association (UAA) Master Operating System v6.0. This suite was engineered from the ground up to eradicate input barriers and ensure every assassin has an equal path to the top of the rankings, regardless of physical constraints.
+I. System Architecture & Philosophy
+Built entirely in AutoHotkey v2 with persistent .ini configuration tracking, this framework eliminates the "accessibility tax" left behind by lazy multi-platform ports. It features a dual-engine runtime switch (1 for Legacy NMH 1/2/Heroes' Paradise via RPCS3; 2 for Unreal Engine 4 NMH 3) to adapt natively to changing input buffering windows.
+II. Core Operational Modules
+* Combat Overdrive: Features hold-to-mash QTE translation, automated combo weaving, instant auto-parry inputs, and a 1-click Death Blow finisher complete with automated 1.5-second lock-on retargeting.
+* Exploration & Minigames: Integrates continuous auto-walk/sprint states, bike cruising, 180-degree drift macros, lawn sweeping loops, Death Drive wheel triggers, and toilet-plunge automation.
+* The Santa Destroy HUD: A low-profile, always-on-top retro terminal overlay (F5 toggle) providing real-time telemetry on active game modes, engine states, and system overrides.
+* Dynamic Control Panel: A multi-tab GUI (F3 toggle) allowing instant remapping of every single macro, saving user configurations seamlessly to disk.
+III. Hotkey Directory
+* F2: Master Override Toggle (On/Off)
+* F3: Control Panel GUI Toggle
+* F4: Engine Mode Switch (Legacy / UE4)
+* F5: HUD Overlay Toggle
+* Middle Click: 1-Click Death Blow
+* LShift: Lock-On Toggle / Camera Reset
+* R Key: Engine-Aware Katana Recharge Shake

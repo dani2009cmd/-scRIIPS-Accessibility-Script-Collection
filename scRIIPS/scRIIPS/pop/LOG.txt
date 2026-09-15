@@ -1,0 +1,7 @@
+--- POPOTAN TRANSLATION REPAIR LOG ---
+Working Directory: E:\scRIIPS\pop
+Found 1 script file(s) to process: windows_translation_cache.json
+
+--- Processing: windows_translation_cache.json ---
+SUCCESS! Processed 19469 sentences in windows_translation_cache.json.
+Saved fixed file to: E:\scRIIPS\pop\windows_translation_cache_FIXED.json

@@ -1,0 +1,86 @@
+; ============================================================
+; RPCS3 QTE Assist — CENTER FOCUS & ANTI-SPAM
+; Lollipop Chainsaw (2012, via RPCS3)
+; ============================================================
+
+#Requires AutoHotkey v2.0
+#SingleInstance Force
+
+global Enabled := true
+global Variation := 15
+global CooldownMs := 1200  ; Increased to 1.2s to prevent penalty double-pressing!
+
+; Pure PS3 Colors (Works flawlessly with Write Color Buffers ON)
+global ColorSquare   := 0xFF69F8  ; Pink
+global ColorTriangle := 0x3EE3A1  ; Green
+global ColorCross    := 0x7DB3E9  ; Blue
+global ColorCircle   := 0xFF6666  ; Red
+
+CoordMode("Pixel", "Client")
+SetTimer(WatchLoop, 25)
+
+WatchLoop() {
+    global Enabled
+    if !Enabled || !WinActive("ahk_exe rpcs3.exe")
+        return
+    Watch()
+}
+
+#HotIf WinActive("ahk_exe rpcs3.exe")
+K::
+{
+    global Enabled
+    Enabled := !Enabled
+    ToolTip(Enabled ? "QTE Assist: ON" : "QTE Assist: OFF")
+    SetTimer(() => ToolTip(), -1000)
+}
+#HotIf
+
+Watch() {
+    static lastFire := 0
+    if (A_TickCount - lastFire < CooldownMs)
+        return
+
+    try
+    {
+        WinGetClientPos(&X, &Y, &Width, &Height, "ahk_exe rpcs3.exe")
+    }
+    catch
+    {
+        return
+    }
+
+    ; STRICT CENTER BOX:
+    ; This ignores Juliet on the left and focuses strictly on Nick's chest.
+    Left   := Width * 35 // 100
+    Right  := Width * 65 // 100
+    Top    := Height * 30 // 100
+    Bottom := Height * 70 // 100
+
+    if PixelSearch(&fx, &fy, Left, Top, Right, Bottom, ColorSquare, Variation) {
+        PressOnce("b")
+        lastFire := A_TickCount
+        return
+    }
+    if PixelSearch(&fx, &fy, Left, Top, Right, Bottom, ColorTriangle, Variation) {
+        PressOnce("v")
+        lastFire := A_TickCount
+        return
+    }
+    if PixelSearch(&fx, &fy, Left, Top, Right, Bottom, ColorCross, Variation) {
+        PressOnce("x")
+        lastFire := A_TickCount
+        return
+    }
+    if PixelSearch(&fx, &fy, Left, Top, Right, Bottom, ColorCircle, Variation) {
+        PressOnce("c")
+        lastFire := A_TickCount
+        return
+    }
+}
+
+PressOnce(key) {
+    Send("{" key " down}")
+    Sleep(50)
+    Send("{" key " up}")
+}
