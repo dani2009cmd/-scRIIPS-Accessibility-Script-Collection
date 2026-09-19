@@ -5,7 +5,6 @@
 #include <StaticConstants.au3>
 #include <EditConstants.au3>
 #include <Misc.au3>
-#include <Process.au3>
 
 Opt("MustDeclareVars", 1)
 Opt("GUIOnEventMode", 1)
@@ -562,7 +561,7 @@ Func _TrackTarget()
         $g_targetHwnd = $active
         Local $title = WinGetTitle($active)
         If StringLen($title) > 42 Then $title = StringLeft($title, 40) & "..."
-        Local $procName = _ProcessGetName(WinGetProcess($active))
+        Local $procName = ProcessGetName(WinGetProcess($active))
         Local $txt = "-> " & $title
         If $procName <> "" Then $txt &= "  -  " & $procName
         GUICtrlSetData($g_hTargetLbl, $txt)
